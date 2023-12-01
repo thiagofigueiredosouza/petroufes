@@ -1,112 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .logo img {
-            max-width: 100%;
-            height: auto;
-            max-height: 50px;
-        }
-
-        nav {
-            flex-grow: 1;
-            text-align: center;
-            margin: 0 20px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-
-        .signup-btn {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Adicionando responsividade para telas menores */
-        @media (max-width: 600px) {
-            nav {
-                display: none;
-            }
-
-            .menu-icon {
-                display: block;
-                font-size: 24px;
-                cursor: pointer;
-            }
-
-            .menu-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background-color: #333;
-                text-align: center;
-            }
-
-            .menu-links a {
-                display: block;
-                padding: 15px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="logo">
-        <img src="./logo.png" alt="Logo">
-    </div>
-    <div class="menu-icon">&#9776;</div>
-    <nav class="menu-links">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-    </nav>
-    <button class="signup-btn">Inscrever-se</button>
-</header>
-
-<!-- Conteúdo da página -->
-<div style="margin-top: 80px;">
-    <h1>Seu conteúdo aqui</h1>
-    <!-- Restante do conteúdo da página -->
-</div>
-
-<script>
-    // Adicione scripts JS aqui, se necessário
-    document.querySelector('.menu-icon').addEventListener('click', function () {
-        document.querySelector('.menu-links').style.display = 'flex';
-    });
-</script>
-
-</body>
+<html lang="pt-br">
+    <head>
+        <title>Petroufes</title>
+        <meta name="description" content="evento realizado pelo capítulo estudantil SPE Ufes voltado para a área do petróleo e gás, Tema: ...">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header class="header-bg">
+            <div class="header">
+                <a href="./">
+                    <img src="./img/logo.png" alt="logo do petroufes">
+                </a>
+                <nav aria-label="primaria">
+                    <ul class="header-menu">
+                        <li><a href="/">Programação</a></li>
+                        <li><a href="/">Palestrantes</a></li>
+                        <li><a href="/">Patrocinadores</a></li>
+                        <li><a href="/">Inscreva-se</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </body>
 </html>
